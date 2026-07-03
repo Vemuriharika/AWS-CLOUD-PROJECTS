@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Auction Winner</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🏆 Auction Winner</h1>
+
+    <h2>{{ winner }}</h2>
+
+    <h3>Winning Bid: ${{ amount }}</h3>
+
+    <a href="/">
+      <button>Back</button>
+    </a>
+
+  </div>
+
+</body>
+
+</html>

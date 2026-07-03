@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Secret Auction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🪙 Secret Auction</h1>
+
+    <form method="POST">
+
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Bid Amount ($)</label>
+      <input type="number" name="bid" required>
+
+      <button type="submit">
+        Submit Bid
+      </button>
+
+    </form>
+
+    <br>
+
+    <a href="/winner">
+      <button>End Auction</button>
+    </a>
+
+    <a href="/reset">
+      <button>Reset Auction</button>
+    </a>
+
+  </div>
+
+</body>
+
+</html>
